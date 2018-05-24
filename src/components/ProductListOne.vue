@@ -25,6 +25,10 @@
         </tbody>
       </table>
     </section>
+    <section class="section">
+      <a class="button" @click="reducePrice">Reduce Price</a>
+      <a class="button" @click="increasePrice">Increase Price</a>
+    </section>
   </div>
 </template>
 
@@ -36,6 +40,18 @@ export default {
     },
     saleProducts() {
       return this.$store.getters.saleProducts
+    }
+  },
+  methods: {
+    reducePrice: function() {
+      this.$store.state.products.forEach( product  => {
+        product.price -= 1
+      })
+    },
+    increasePrice: function() {
+      this.$store.state.products.forEach( product  => {
+        product.price += 1
+      })
     }
   }
 }
