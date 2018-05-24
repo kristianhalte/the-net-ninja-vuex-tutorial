@@ -18,7 +18,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="product in products">
+          <tr v-for="product in saleProducts">
             <td>{{ product.name }}</td>
             <td>$ {{ product.price }}</td>
           </tr>
@@ -33,6 +33,15 @@ export default {
   computed: {
     products() {
       return this.$store.state.products
+    },
+    saleProducts() {
+      var saleProducts = this.$store.state.products.map( product => {
+        return {
+          name: '** ' + product.name + ' **',
+          price: product.price /2
+        }
+      })
+      return saleProducts
     }
   }
 }
