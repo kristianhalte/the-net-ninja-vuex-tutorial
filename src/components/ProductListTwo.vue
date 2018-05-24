@@ -19,7 +19,7 @@
         </thead>
         <tbody>
           <tr v-for="product in products">
-            <td>{{ product.name }}</td>
+            <td v-text="product.name"></td>
             <td>$ {{ product.price }}</td>
           </tr>
         </tbody>
@@ -30,7 +30,11 @@
 
 <script>
 export default {
-  props: ['products']
+  computed: {
+    products() {
+      return this.$store.state.products
+    }
+  }
 }
 </script>
 
