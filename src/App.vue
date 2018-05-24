@@ -4,10 +4,10 @@
       <div class="container">
         <div class="columns">
           <div class="column">
-            <product-list-one v-bind:products="products"></product-list-one>
+            <product-list-one></product-list-one>
           </div>
           <div class="column">
-            <product-list-two :products="products"></product-list-two>
+            <product-list-two></product-list-two>
           </div>
         </div>
       </div>
