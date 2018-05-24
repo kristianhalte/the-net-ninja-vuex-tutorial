@@ -1,7 +1,17 @@
 <template>
   <div id="app">
-    <product-list-one v-bind:products="products"></product-list-one>
-    <product-list-two :products="products"></product-list-two>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <product-list-one v-bind:products="products"></product-list-one>
+          </div>
+          <div class="column">
+            <product-list-two :products="products"></product-list-two>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
