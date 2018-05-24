@@ -1,6 +1,9 @@
 # the-net-ninja-vuex-tutorial
 
-> A Vue.js project
+> A Vue.js project to learn Vuex
+
+## Tutorial
+> [The Net Ninja: Vuex Tutorial](https://www.youtube.com/watch?v=BGAu__J4xoc&index=1&list=PL4cUxeGkcC9i371QO_Rtkl26MwtiJ30P2)
 
 ## Build Setup
 
