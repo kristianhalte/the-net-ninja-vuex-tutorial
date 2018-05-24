@@ -26,8 +26,8 @@
       </table>
     </section>
     <section class="section">
-      <a class="button" @click="reducePrice">Reduce Price</a>
-      <a class="button" @click="increasePrice">Increase Price</a>
+      <a class="button" @click="reducePrice(4)">Reduce Price</a>
+      <a class="button" @click="increasePrice(2)">Increase Price</a>
     </section>
   </div>
 </template>
@@ -43,11 +43,11 @@ export default {
     }
   },
   methods: {
-    reducePrice: function() {
-      this.$store.commit('reducePrice')
+    reducePrice: function(amount) {
+      this.$store.dispatch('reducePrice', amount)
     },
-    increasePrice: function() {
-      this.$store.commit('increasePrice')
+    increasePrice: function(amount) {
+      this.$store.dispatch('increasePrice', amount)
     }
   }
 }
