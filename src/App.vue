@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import ProductListOne from './components/ProductListOne';
-import ProductListTwo from './components/ProductListTwo';
+import ProductListOne from './components/ProductListOne'
+import ProductListTwo from './components/ProductListTwo'
 export default {
   components: {
     'product-list-one': ProductListOne,
@@ -26,12 +26,7 @@ export default {
   name: 'app',
   data () {
     return {
-      products: [
-        { name: 'Banana Skin', price: 20 },
-        { name: 'Shiny Star', price: 40 },
-        { name: 'Green Shells', price: 60 },
-        { name: 'Red Shells', price: 80 }
-      ]
+      
     }
   }
 }
