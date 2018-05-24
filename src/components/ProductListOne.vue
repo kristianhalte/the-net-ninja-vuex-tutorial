@@ -33,22 +33,21 @@
 </template>
 
 <script>
+import { mapActions, mapGetters } from 'vuex'
 export default {
   computed: {
     products() {
       return this.$store.state.products
     },
-    saleProducts() {
-      return this.$store.getters.saleProducts
-    }
+    ...mapGetters([
+        'saleProducts'
+      ])
   },
   methods: {
-    reducePrice: function(amount) {
-      this.$store.dispatch('reducePrice', amount)
-    },
-    increasePrice: function(amount) {
-      this.$store.dispatch('increasePrice', amount)
-    }
+    ...mapActions([
+        'reducePrice',
+        'increasePrice'
+      ])
   }
 }
 </script>
