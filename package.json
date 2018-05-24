@@ -1,6 +1,6 @@
 {
   "name": "the-net-ninja-vuex-tutorial",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/kristianhalte/the-net-ninja-vuex-tutorial#readme",
   "dependencies": {
-    "vue": "^2.5.11"
+    "vue": "^2.5.11",
+    "vuex": "^3.0.1"
   },
   "browserslist": [
     "> 1%",
