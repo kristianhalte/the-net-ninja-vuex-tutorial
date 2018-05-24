@@ -44,14 +44,10 @@ export default {
   },
   methods: {
     reducePrice: function() {
-      this.$store.state.products.forEach( product  => {
-        product.price -= 1
-      })
+      this.$store.commit('reducePrice')
     },
     increasePrice: function() {
-      this.$store.state.products.forEach( product  => {
-        product.price += 1
-      })
+      this.$store.commit('increasePrice')
     }
   }
 }
