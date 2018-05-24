@@ -35,5 +35,17 @@ export const store = new Vuex.Store({
         product.price += 1
       })
     }
+  },
+  actions: {
+    reducePrice: context => {
+      setTimeout(function() {
+        context.commit('reducePrice')
+      }, 2000)
+    },
+    increasePrice: context => {
+      setTimeout(function() {
+        context.commit('increasePrice')
+      }, 1000)
+    }
   }
 })
