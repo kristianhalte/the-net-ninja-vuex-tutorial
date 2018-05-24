@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/kristianhalte/the-net-ninja-vuex-tutorial#readme",
   "dependencies": {
-    "vue": "^2.5.11"
+    "vue": "^2.5.11",
+    "vuex": "^3.0.1"
   },
   "browserslist": [
     "> 1%",
